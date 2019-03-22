@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    >
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        app:layout_widthPercent="75%"
+        app:layout_heightPercent="40%"
+        app:layout_marginLeftPercent="12%"
+        app:layout_marginTopPercent="35%"
+        android:background="#e8e8e8"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Barang"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:id="@+id/tambah_header"
+            />
+        <EditText
+            android:layout_below="@id/tambah_header"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
+            android:hint="Nama Barang"
+            android:background="#fff"
+            android:layout_marginHorizontal="15sp"
+            android:id="@+id/nama_barang"
+            />
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/stuff"
+            android:layout_below="@id/nama_barang"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="30sp"
+            android:id="@+id/icon"
+            />
+        <EditText
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:background="#fff"
+            android:gravity="center"
+            android:layout_marginLeft="80sp"
+            android:layout_below="@id/nama_barang"
+            android:layout_marginTop="20sp"
+            android:id="@+id/jumlah_barang"
+            android:inputType="number"
+            />
+        <Button
+            android:layout_marginRight="25sp"
+            android:layout_below="@id/nama_barang"
+            android:layout_marginTop="15sp"
+            android:layout_width="75sp"
+            android:layout_height="40sp"
+            android:text="IT"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:id="@+id/jenis"
+            android:background="#6A98E1"
+            />
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="70sp"
+            android:background="#6A98E1"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_below="@id/nama_barang"
+            android:text="Tambahkan"
+            android:textColor="#fff"
+            android:id="@+id/tambahkan"
+            />
+
+
+
+    </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

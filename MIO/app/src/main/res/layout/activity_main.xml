@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="7%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="40%"
+            app:layout_heightPercent="20%"
+            android:background="@drawable/tombol2"
+            android:id="@+id/tombol0"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Data Barang"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tombol1"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="40%"
+            app:layout_heightPercent="20%"
+            android:background="@drawable/tombol2"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Pinjamkan Barang"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/tombol0"
+            android:id="@+id/tombol2"
+            app:layout_marginLeftPercent="7%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="40%"
+            app:layout_heightPercent="20%"
+            android:background="@drawable/tombol2"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Pengembalian Barang"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/tombol1"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="7%"
+            app:layout_marginTopPercent="3%"
+            app:layout_widthPercent="40%"
+            app:layout_heightPercent="20%"
+            android:background="@drawable/tombol2"
+            android:id="@+id/tombol3"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Download laporan excel"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginBottom="10sp"
+                />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
